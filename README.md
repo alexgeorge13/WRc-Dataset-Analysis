@@ -110,7 +110,7 @@ Parses the 72 structural subfolders, verifies model layer dimensions, skips alre
 
 ### 2. Model Evaluation 
 `python evaluate.py`
-Primary verification engine that processes model checkpoints against the validation and test splits to compute multi-level hierarchical metrics, classification ledgers, and top-$K$ accuracy diagnostics.
+Primary verification engine that processes model checkpoints against the validation and test splits to compute multi-level hierarchical metrics, classification ledgers, and top-K accuracy diagnostics.
 
 
 
