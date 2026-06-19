@@ -1,0 +1,73 @@
+Code,L1,L2,L3,L4
+B,Structural Defects,Structural Failure,Broken,Broken pipe
+CC,Structural Defects,Surface Fissure,Crack,Crack - Circumferential
+CL,Structural Defects,Surface Fissure,Crack,Crack - Longitudinal
+CM,Structural Defects,Surface Fissure,Crack,Crack - Multiple
+CS,Structural Defects,Surface Fissure,Crack,Crack - Spiral
+CU,Miscellaneous / General Observations,Miscellaneous,Camera Under Water,Loss of Vision - Camera under water
+CXD,Construction / Inventory Observations,Connections+Junctions,Defective Connection,Defective Connection - Connecting pipe damaged
+CXI,Construction / Inventory Observations,Connections+Junctions,Defective Connection,Defective Connection - Intruding
+CN,Construction / Inventory Observations,Connections+Junctions,Connection,Connection
+D,Structural Defects,Structural Failure,Deformed,Deformed drain/sewer
+DB,Structural Defects,Brick Defects,Displaced Bricks,Displaced bricks
+DEC,Service & Operational Defects,Deposits,Accumulated Deposits,Settled deposits - Hard or compacted
+DEE,Service & Operational Defects,Deposits,Accumulated Deposits,Attached deposits - Encrustation
+DEF,Service & Operational Defects,Deposits,Accumulated Deposits,Attached deposits - Fouling
+DEG,Service & Operational Defects,Deposits,Accumulated Deposits,Attached Deposits - Grease
+DER,Service & Operational Defects,Deposits,Accumulated Deposits,Settled deposits - Coarse
+DES,Service & Operational Defects,Deposits,Accumulated Deposits,Settled deposits - Fine
+EX,Miscellaneous / General Observations,Infiltration/Exfiltration,Exfiltration,Exfiltration
+FC,Structural Defects,Surface Fissure,Fracture,Fracture - Circumferential
+FL,Structural Defects,Surface Fissure,Fracture,Fracture - Longitudinal
+FM,Structural Defects,Surface Fissure,Fracture,Fracture - Multiple
+FS,Structural Defects,Surface Fissure,Fracture,Fracture - Spiral
+H,Structural Defects,Structural Failure,Hole,Hole in drain/sewer
+ID,Service & Operational Defects,Infiltration/Exfiltration,Infiltration,Infiltration - Dripping
+IG,Service & Operational Defects,Infiltration/Exfiltration,Infiltration,Infiltration - Gushing
+IR,Service & Operational Defects,Infiltration/Exfiltration,Infiltration,Infiltration - Running
+IS,Service & Operational Defects,Infiltration/Exfiltration,Infiltration,Infiltration - Seeping
+ING,Service & Operational Defects,Ingress,Material Ingress,Ingress of soil
+INGF,Service & Operational Defects,Ingress,Material Ingress,Ingress of fine material
+INGZ,Service & Operational Defects,Ingress,Material Ingress,Ingress of other material
+JDL,Structural Defects,Joint Defects,Joint Displaced,Joint displaced large
+JDM,Structural Defects,Joint Defects,Joint Displaced,Joint displaced medium
+JN,Construction / Inventory Observations,Connections+Junctions,Junction,Junction
+JX,Construction / Inventory Observations,Connections+Junctions,Defective Junction,Junction
+JXB,Construction / Inventory Observations,Connections+Junctions,Defective Junction,Defective Junction - Connecting pipe blocked
+JXD,Construction / Inventory Observations,Connections+Junctions,Defective Junction,Defective Junction - Connecting pipe damaged
+LD,Miscellaneous / General Observations,Line of Sewer,Line Deviation,Line of drain/sewer deviates down
+LL,Miscellaneous / General Observations,Line of Sewer,Line Deviation,Line of drain/sewer deviates left
+LR,Miscellaneous / General Observations,Line of Sewer,Line Deviation,Line of drain/sewer deviates right
+LU,Miscellaneous / General Observations,Line of Sewer,Line Deviation,Line of drain/sewer deviates up
+LX,Structural Defects,Construction - Other,Lining defect,Lining defect
+MB,Structural Defects,Brick Defects,Missing Bricks,Missing bricks
+MC,Construction / Inventory Observations,Construction - Other,Material Change,Material of drain/sewer changes
+MM,Structural Defects,Brick Defects,Mortar Missing,Mortar missing
+OB,Service & Operational Defects,Other Obstacles,Specific Obstacles,Other Obstacles
+OBB,Service & Operational Defects,Other Obstacles,Specific Obstacles,Other Obstacles - Brick or masonry in invert
+OBC,Service & Operational Defects,Other Obstacles,Specific Obstacles,Other Obstacles - Through connection/junction
+OBI,Service & Operational Defects,Other Obstacles,Specific Obstacles,Other Obstacles - Protruding through wall
+OBM,Service & Operational Defects,Other Obstacles,Specific Obstacles,Other Obstacles - Pipe material in invert
+OBP,Service & Operational Defects,Other Obstacles,Specific Obstacles,Other Obstacles - External pipe or cable
+OBS,Service & Operational Defects,Other Obstacles,Specific Obstacles,Other Obstacles - Built into structure
+OBX,Service & Operational Defects,Other Obstacles,Specific Obstacles,Other Obstacles - Other object in invert
+OJL,Structural Defects,Joint Defects,Open Joint,Open joint large
+OJM,Structural Defects,Joint Defects,Open Joint,Open joint medium
+RF,Service & Operational Defects,Roots,Root Intrusion,Roots - Fine
+RM,Service & Operational Defects,Roots,Root Intrusion,Roots - Mass
+RT,Service & Operational Defects,Roots,Root Intrusion,Roots - Tap
+SAP,Structural Defects,Surface Damage,Surface Degradation,Surface Damage - Aggregate projecting from surface
+SAV,Structural Defects,Surface Damage,Surface Degradation,Surface Damage - Aggregate visible
+SCP,Structural Defects,Surface Damage,Surface Degradation,Surface Damage - Corrosion products
+SRC,Structural Defects,Surface Damage,Surface Degradation,Surface Damage - Reinforcement corroded
+SRP,Structural Defects,Surface Damage,Surface Degradation,Surface Damage - Reinforcement projecting from surface
+SRV,Structural Defects,Surface Damage,Surface Degradation,Surface Damage - Reinforcement visible
+SS,Structural Defects,Surface Damage,Surface Degradation,Surface Damage - Spalling
+SW,Structural Defects,Surface Damage,Surface Degradation,Surface Damage - Increased roughness
+SR,Construction / Inventory Observations,Construction - Other,Sealing Ring,Sealing ring intruding
+SV,Structural Defects,Construction - Other,Soil Visible,Soil visible through defect
+VR,Service & Operational Defects,Miscellaneous,Vermin,Vermin - Rat
+VV,Structural Defects,Construction - Other,Void Visible,Void visible through defect
+WL,Miscellaneous / General Observations,Water Level,Water Level Observation,Water level
+XB,Structural Defects,Brick Defects,Collapsed Brickwork,Collapsed brickwork or masonry
+XP,Structural Defects,Structural Failure,Collapsed Drain,Collapsed drain/sewer
