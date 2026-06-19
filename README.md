@@ -56,7 +56,7 @@ Because the dataset is hosted securely within the UK Water Sector's closed platf
 4. **The Secondary Login Trick:** On the UKWIR MySite page, you must click "Log In" a second time to register your session state fully inside the data portal.
 5. **Search & Download:** In the main portal search bar, look for the official project repository name: "United Utilities: Artificial Intelligence and Sewers"
 6. **Local Deployment:** Download the zip payload, extract it, and place the raw code subfolders inside your local `data/WRcDataset/` directory.
-7. 
+7. **Data Clubbing:** Consolidate all the folders that are split numerically (e.g., merging `RM_1` and `RM_2` into a single `RM` parent directory).
 
 ---
 
