@@ -56,6 +56,7 @@ Because the dataset is hosted securely within the UK Water Sector's closed platf
 4. **The Secondary Login Trick:** On the UKWIR MySite page, you must click "Log In" a second time to register your session state fully inside the data portal.
 5. **Search & Download:** In the main portal search bar, look for the official project repository name: "United Utilities: Artificial Intelligence and Sewers"
 6. **Local Deployment:** Download the zip payload, extract it, and place the raw code subfolders inside your local `data/WRcDataset/` directory.
+7. 
 
 ---
 
@@ -65,37 +66,51 @@ Follow these exact operational steps inside your terminal to stand up an identic
 
 ### STEP 1: Create a Raw Virtual Environment
 To bypass pre-release interpreter hooks, build a clean virtual environment without the bundled package installer:
+```
 python -m venv venv --without-pip
+```
 
 
 ### STEP 2: Activate the Environment
 On Windows PowerShell:
+```
 .\venv\Scripts\Activate
+```
 
 On Mac/Linux:
+```
 source venv/bin/activate
+```
 
 
 ### STEP 3: Bootstrap and Update Pip Manually
 Now that the isolated space is active, download and inject a stable standalone pip build:
+```
 curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
 python get-pip.py
 del get-pip.py
+```
 
 
 ### STEP 4: Install Core Framework Requirements
+```
 pip install -r requirements.txt
+```
 
 
 ### STEP 5: Override with Dedicated GPU PyTorch Binaries 
 By default, standard pip pulls a CPU-only PyTorch setup on Windows. Run these commands to explicitly swap it for the heavy CUDA-enabled system binaries:
+```
 pip uninstall torch torchvision -y
 pip install torch torchvision --index-url https://download.pytorch.org/whl/cu126
+```
 
 
 ### STEP 6: Verify Local Hardware Access
 Execute the diagnostic test script to confirm that PyTorch can successfully communicate with your local graphics card:
+```
 python tests/test_gpu.py
+```
 
 
 ===================================================================
@@ -104,12 +119,16 @@ python tests/test_gpu.py
 ## 🚀 EXECUTION DRIVERS RUN ROUTINES
 
 ### 1. Main Benchmarking and Training Ledger
-`python main.py`
+```
+python main.py
+```
 Parses the 72 structural subfolders, verifies model layer dimensions, skips already completed backbones using a bypass shield, trains remaining networks over a 10-epoch fine-tuning cycle, and compiles model performances.
 
 
 ### 2. Model Evaluation 
-`python evaluate.py`
+```
+python evaluate.py
+```
 Primary verification engine that processes model checkpoints against the validation and test splits to compute multi-level hierarchical metrics, classification ledgers, and top-K accuracy diagnostics.
 
 
