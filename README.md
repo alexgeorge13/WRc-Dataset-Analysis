@@ -15,7 +15,6 @@ SewerDefectClassification/
 │   │   ├── MSCC5_Defect_Code_Groups.csv
 │   │   ├── MSCC5_Full_Dataset_Manifest.csv
 │   │   ├── MSCC5_split_indices.pth
-│   │   └── WRc_Master_Metadata.csv  # 2D-to-3D projection registry (diameters & chainages)
 │   ├── outputs/                     # Compiled CSV ledgers & manuscript tables
 │   │   ├── FINAL_BENCHMARK_RESULTS.csv
 │   │   ├── ...
