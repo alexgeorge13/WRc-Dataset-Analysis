@@ -23,6 +23,9 @@ SewerDefectClassification/
 │   │   ├── fig1_accuracy_top1.png
 │   │   ├── ...
 │   │   └── fig5_f1_micro.png
+│   ├── sample_test_images/          # Holds sample images for instant verification
+│   │   ├── Connection_1.png
+│   │   └── Deposit_1.png
 │   └── WRcDataset/                  # 72 asset categories matching MSCC5 (e.g., B, CC, DEF)
 │
 ├── src/                             # Core Modular Production Package
@@ -40,6 +43,7 @@ SewerDefectClassification/
 ├── tests/test_gpu.py                # Baseline CUDA availability test
 ├── main.py                          # Primary benchmark, ledger compilation, and audit engine
 ├── evaluate.py                      # Post-Run Analysis, Generate Plots
+├── test_samples.py                  # Standalone script for sample data inference 
 └── requirements.txt                 # Environment dependency file
 ```
 ## 📥 Dataset Acquisition Guide
@@ -112,7 +116,24 @@ python tests/test_gpu.py
 ```
 
 
-===================================================================
+---
+
+## ⚡ QUICKSTART: PRE-TRAINED INFERENCE DEMO
+
+Before kicking off a complete multi-model training pipeline from scratch, you can execute an immediate end-to-end inference test. This utilizes our pre-trained **ResNet-50** checkpoint weights to evaluate the imagery found within `data/sample_test_images/` extracted from a real-world sewer pipe video dataset. This dataset was collected using a mobile CCTV inspection robot at the iCAIR facility, University of Sheffield.
+
+> Edwards, S., Zhang, R., Worley, R., Mihaylova, L., Aitken, J., & Anderson, S. R. (2023). A robust method for approximate visual robot localization in feature-sparse sewer pipes. Frontiers in Robotics and AI, 10, 1150508.
+
+
+Run the dedicated test sampler script:
+```
+python test_samples.py
+```
+For each sample image, the model extracts the *top-3* highest-probability classifications and maps them across the four nesting levels ($L1 \rightarrow L2 \rightarrow L3 \rightarrow L4$) derived from the MSCC5 taxonomy table. The comprehensive predictions are compiled and exported directly to the output folder at `data/outputs/multi_model_top3_predictions.csv`.
+
+**Note:** Once training on the WRc dataset has been completed for all models, rerun this script to generate predictions for these images using every trained model.
+
+---
 
 
 ## 🚀 EXECUTION DRIVERS RUN ROUTINES
@@ -122,6 +143,9 @@ python tests/test_gpu.py
 python main.py
 ```
 Parses the 72 structural subfolders, verifies model layer dimensions, skips already completed backbones using a bypass shield, trains remaining networks over a 10-epoch fine-tuning cycle, and compiles model performances.
+
+**Note:** Training for **Resnet-50** will be skipped as it already exists in the `models/checkpoints` folder. To train the model from scratch, remove the existing checkpoint before starting training.
+
 
 
 ### 2. Model Evaluation 
